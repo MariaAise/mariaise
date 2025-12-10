@@ -1,11 +1,191 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout
+  title="Maria Aise | AI/ML for Financial Risk & Reasoning Systems"
+  description="AI/ML for financial risk, reasoning systems, and high-stakes decision modelling."
+>
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <div class="hero-kicker">AI / ML · Financial Risk · Reasoning</div>
+      <h1 class="hero-title">
+        AI/ML for financial risk, reasoning systems, and high-stakes decisions.
+      </h1>
+      <p class="hero-lead">
+        Applied and research work spanning anomaly detection, multi-step
+        reasoning architectures, non-stationary evaluation, and executive-grade
+        decision intelligence.
+      </p>
+      <p class="hero-meta">
+        PhD in AI/ML · Fellow CPA Australia · 20+ years across analytics,
+        finance, and modelling. Focused on systems where error tolerance is low
+        and explanations matter.
+      </p>
+    </div>
+
+    <aside class="hero-side">
+      <div class="pill">Currently focused</div>
+      <ul class="hero-list">
+        <li>• Reasoning over P&amp;L and variance structures</li>
+        <li>• Evaluation of ML under regime shifts</li>
+        <li>• Decision interfaces for CFOs and risk committees</li>
+      </ul>
+
+      <div class="text-muted">
+        Recent work: financial anomaly reasoner prototypes, volatility-aware
+        evaluation frameworks, and decision layers translating model outputs
+        into next actions.
+      </div>
+    </aside>
+  </section>
+
+  <!-- CORE WORK AREAS -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Core Work Areas</h2>
+      <div class="section-note">What I actually build and study</div>
+    </div>
+
+    <div class="grid-two">
+      <div class="card">
+        <div class="card-title">Financial anomaly detection &amp; reasoning</div>
+        <p class="card-body">
+          Models that detect and explain anomalies in P&amp;L, balance sheets,
+          and variance reports, pairing numeric signals with structured reasoning
+          traces suitable for senior finance audiences.
+        </p>
+        <div class="chip-row">
+          <span class="chip">P&amp;L anomalies</span>
+          <span class="chip">Variance analysis</span>
+          <span class="chip">Structured reasoning</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Non-stationary &amp; regime-shift evaluation</div>
+        <p class="card-body">
+          Evaluation frameworks for ML models under drift and structural breaks,
+          common in markets and corporate performance data. Emphasis on robustness
+          and failure-mode mapping.
+        </p>
+        <div class="chip-row">
+          <span class="chip">Distribution shift</span>
+          <span class="chip">Stress testing</span>
+          <span class="chip">Risk metrics</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Reasoning architectures</div>
+        <p class="card-body">
+          Multi-step reasoning setups that combine synthetic tasks, constrained
+          tool use, and evaluation protocols for finance- and governance-oriented
+          decision problems.
+        </p>
+        <div class="chip-row">
+          <span class="chip">Synthetic tasks</span>
+          <span class="chip">Tool-augmented reasoning</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Decision systems for executives</div>
+        <p class="card-body">
+          Abstractions that convert model outputs into CFO- and board-level
+          options, with clear tradeoffs and next-step actions rather than raw
+          predictions.
+        </p>
+        <div class="chip-row">
+          <span class="chip">Decision intelligence</span>
+          <span class="chip">CFO interfaces</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED PROJECTS -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="section-note">
+        Concise summaries · details on <a href="/projects">Projects</a>
+      </div>
+    </div>
+
+    <div class="grid-two">
+      <div class="card">
+        <div class="card-title">Financial Anomaly Reasoner (prototype)</div>
+        <div class="card-sub">
+          Multi-step explanations for anomalies in P&amp;L and variance reports.
+        </div>
+        <p class="card-body">
+          Pairs structured financial data with generated reasoning traces that
+          identify where the anomaly is, which expectations it violates, and
+          which drivers should be tested next. Designed to plug into CFO and
+          controller workflows.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          Non-Stationary Risk Evaluation Framework
+        </div>
+        <div class="card-sub">
+          Stress-testing models against drift and structural breaks.
+        </div>
+        <p class="card-body">
+          Evaluation harness for classification/regression models under regime
+          changes, using volatility-aware splits, drift detection, and
+          risk-weighted metrics relevant to finance and corporate planning.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Executive Decision Modelling Layer</div>
+        <div class="card-sub">
+          From model outputs to options, not scores.
+        </div>
+        <p class="card-body">
+          A light abstraction over ML services that turns predictions into
+          scenarios, tradeoffs, and recommended actions, focused on reporting,
+          budgeting, and risk review cycles.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Reasoning Benchmarks for Finance Tasks</div>
+        <div class="card-sub">
+          Task set for evaluating step-wise reasoning on financial questions.
+        </div>
+        <p class="card-body">
+          Prototype benchmark of structured tasks (variance explanations,
+          reconciliation checks, policy-constrained decisions) used to measure
+          model reasoning quality beyond single-shot answers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNALS / LINKS OUT -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">Signals</h2>
+      <div class="section-note">Where to look next</div>
+    </div>
+
+    <ul class="list-compact">
+      <li>
+        Research and preprints: <a href="/research">/research</a>
+      </li>
+      <li>
+        System and project details: <a href="/projects">/projects</a>
+      </li>
+      <li>
+        Technical notes and memos: <a href="/writing">/writing</a> and
+        <a href="/blog">/blog</a>
+      </li>
+    </ul>
+  </section>
+</BaseLayout>
